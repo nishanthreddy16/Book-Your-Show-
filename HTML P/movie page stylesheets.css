@@ -1,0 +1,11 @@
+      #bahu{ float:inline-start ;width:3in ; height:5in; border:1px solid rgb(182, 165, 165);border-radius:5mm;padding:0mm;margin:7mm;}
+        #div1{width :14in; height:6in;background-color: rgb(60, 58, 56);border:1px solid black; border-radius: 7mm;padding: 6px;margin-top: 1cm;margin-right: 1cm;}
+        #name{font-size: 9mm;font-family: papyrus;color:rgb(190, 202, 212);padding-left: 4in;padding-top: 1in;margin:0in}
+        #para1{color:rgb(144, 164, 176);padding-left:4in;padding-top: 0mm;padding-bottom:0in;margin:0in;
+            font-size: 5mm;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;}
+        #para2{color:rgb(144, 164, 176);padding-left:4in;padding-top: 0mm;padding-bottom:0in;margin:0in;
+            font-size: 5mm;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;}
+        #div2{background-color: rgb(174, 195, 213);width:9in ;height:1cm;padding-left: in; margin-left: 4in;margin-top: 0.5cm;border:1px solid rgb(86, 84, 81);border-radius: 4px;} 
+        #para3{padding-top:3mm;margin:0.1px;padding-left: 3mm;color:rgb(98, 79, 79);}
+        #para4{color:rgb(151, 162, 173);margin-top:1cm}
+        #book{width:5cm;height: 1cm;background-color:rgb(218, 200, 206);border:1px solid rgb(83, 74, 74);border-radius: 2mm;margin-top:1.5in;margin-left:6.5in}

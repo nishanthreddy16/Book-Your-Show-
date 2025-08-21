@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Show</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, rgb(58, 58, 214), purple);
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: papyrus, cursive;
+    }
+
+    nav a {
+      color: aliceblue;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #login {
+      padding: 8px 16px;
+      background-color: rgb(66, 225, 130);
+      color: #fff;
+      font-size: 1rem;
+      border: 1px solid greenyellow;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    #login:hover {
+      transform: scale(1.1);
+    }
+
+    /* Slideshow scroll */
+    #scroll-container {
+      background: linear-gradient(to right, rgb(30, 15, 15), rgb(41, 41, 115));
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 15px;
+      margin: 20px;
+      border: 1px solid wheat;
+      border-radius: 15px;
+    }
+
+    .slideimg {
+      width: 300px;
+      height: 200px;
+      border-radius: 15px;
+      border: 1px solid #ddd;
+      margin-right: 15px;
+      display: inline-block;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .slideimg:hover {
+      transform: scale(0.9);
+    }
+
+    /* Movie list grid */
+    .movie_list {
+      background: linear-gradient(to bottom, rgb(28, 109, 179), rgb(46, 200, 214));
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .movieimgback {
+      background: rgb(47, 41, 34);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .movieimgback:hover {
+      transform: scale(0.95);
+    }
+
+    .movieimage {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .moviename {
+      color: aliceblue;
+      font-family: papyrus, cursive;
+      padding: 10px 0;
+    }
+
+    /* Footer / Contact */
+    footer {
+      background: url("contac1.webp") no-repeat center/cover;
+      padding: 40px;
+      color: rgb(58, 40, 40);
+    }
+
+    footer h2 {
+      text-decoration: underline;
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer address {
+      margin: 5px 0;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin: 10px 0;
+      }
+
+      .slideimg {
+        width: 250px;
+        height: 150px;
+      }
+
+      .movieimage {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Book Your Show</h1>
+    <nav>
+      <a href="#movie_list">Movies</a>
+      <a href="events.html">Events</a>
+    </nav>
+    <a href="Login form.html"><button id="login">Sign in</button></a>
+  </header>
+
+  <!-- Slideshow -->
+  <div id="scroll-container">
+    <a href="page stranger things.html"><img src="transformers-the-last-knight-transformers-5-4k-wallpaper-preview.jpg" class="slideimg" alt="Transformers"></a>
+    <a href="page stranger things.html"><img src="stranger-things.jpeg" class="slideimg" alt="Stranger Things"></a>
+    <img src="moneyheist.webp" class="slideimg" alt="Money Heist">
+    <img src="rednotice.jpeg" class="slideimg" alt="Red Notice">
+    <img src="peaky-blinders-.jpeg" class="slideimg" alt="Peaky Blinders">
+  </div>
+
+  <!-- Movies Grid -->
+  <section class="movie_list" id="movie_list">
+    <div class="movieimgback">
+      <a href="page kalki.html"><img class="movieimage" src="kalki.jpeg" alt="Kalki"></a>
+      <p class="moviename">Kalki (2024)</p>
+    </div>
+    <div class="movieimgback">
+      <a href="page salaar.html"><img class="movieimage" src="salaar1.jpeg" alt="Salaar"></a>
+      <p class="moviename">Salaar (2023)</p>
+    </div>
+    <div class="movieimgback">
+      <a href="page bahubali.html"><img class="movieimage" src="bahubali.jpg" alt="Bahubali"></a>
+      <p class="moviename">Bahubali 2 (2017)</p>
+    </div>
+    <div class="movieimgback">
+      <a href="page radheshyam.html"><img class="movieimage" src="radheshyam.jpg" alt="Radhe Shyam"></a>
+      <p class="moviename">Radhe Shyam (2022)</p>
+    </div>
+    <div class="movieimgback">
+      <a href="page mirchi.html"><img class="movieimage" src="mirchi.jpeg" alt="Mirchi"></a>
+      <p class="moviename">Mirchi (2013)</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="SAAHO-BIKE-p.jpeg" alt="Saaho">
+      <p class="moviename">Saaho</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="mr perfect.jpeg" alt="Mr Perfect">
+      <p class="moviename">Mr Perfect</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="darling.jpeg" alt="Darling">
+      <p class="moviename">Darling</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="billa.jpg" alt="Billa">
+      <p class="moviename">Billa</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="ekniranjan.jpg" alt="Ek Niranjan">
+      <p class="moviename">Ek Niranjan</p>
+    </div>
+    <div class="movieimgback">
+      <img class="movieimage" src="bujjigaa.jpeg" alt="Bujjigaadu">
+      <p class="moviename">Bujjigaadu</p>
+    </div>
+  </section>
+
+  <hr><hr>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Contact us</h2>
+    <p>Ph.No. : +91 7674849514</p>
+    <p>Email : Prabhasprabha129siri@gmail.com</p>
+    <address>Address : Phagwara (144401), Punjab, India 😁</address>
+  </footer>
+
+</body>
+</html>
